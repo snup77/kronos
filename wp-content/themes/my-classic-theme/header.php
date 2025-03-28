@@ -1,32 +1,26 @@
-<!doctype html>
-<html lang="en">
+
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php wp_head(); ?>
+  <meta charset="<?php bloginfo('charset'); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><?php bloginfo('name'); ?><?php wp_title('|', true, 'left'); ?></title>
+  <?php wp_head(); ?>
 </head>
-<body>
-</head>
-<body>
-    <header>
-        <div class="site-header container">
-            <div class="logo">
-                <a href="<?php echo home_url(); ?>">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="50" height="50">
-                        <circle cx="50" cy="50" r="48" fill="#0073aa" />
-                        <text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="40" font-family="Arial, sans-serif" dy=".3em">WP</text>
-                    </svg>
-                </a>
-            </div>
-            <nav>
-                <?php
-                wp_nav_menu(array(
-                    'theme_location' => 'primary',
-                    'container' => false,
-                    'menu_class' => 'main-menu',
-                ));
-                ?>
-            </nav>
-        </div>
-    </header>
-    <main>
+<body <?php body_class(); ?>>
+  <header class="">
+    <div class=" site-header container">
+      <a href="<?php echo home_url(); ?>" class="logo">
+        <img src="https://www.shethagency.com/wp-content/uploads/2024/06/shethlogo-black.png" alt="Sheth Agency">
+      </a>
+      <nav class="main-nav">
+        <?php
+          wp_nav_menu([
+            'theme_location' => 'primary',
+            'menu_class' => 'main-menu',
+            'container' => false
+          ]);
+        ?>
+      </nav>
+    </div>
+  </header>
