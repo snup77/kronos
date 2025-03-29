@@ -59,7 +59,7 @@ table {
 ------------------------------------------- */
 @font-face {
   font-family: 'Playfair Display';
-  src: url('..assets/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  src: url('assets/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
   font-weight: 400 700;
   font-style: normal;
   font-display: swap;
@@ -70,7 +70,7 @@ table {
 ------------------------------------------- */
 @font-face {
   font-family: 'Montserrat';
-  src: url('..assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  src: url('assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -81,7 +81,7 @@ table {
 ------------------------------------------- */
 @font-face {
   font-family: 'Montserrat';
-  src: url('..assets/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+  src: url('assets/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
@@ -106,8 +106,26 @@ h1, h2 {
   font-weight: 500;
 }
 
+h2 {
+  font-size: clamp(2.5rem, 2.2727rem + 0.9697vw, 3rem);  
+}
+
+h3.section-label {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color:#939393
+}
+
 em {
   font-style: italic; /* will trigger Montserrat italic */
+}
+
+p {
+  font-weight: 500;
+  line-height: 1.8rem;
+  color:#939393
 }
 
 /* Max Width for sections */
@@ -115,6 +133,10 @@ em {
   max-width: 1200px; /* Adjust as needed */
   margin: 0 auto; /* Centers the container */
   padding: 0 1rem; /* Adds some padding for smaller screens */
+}
+
+.section-padding {
+  padding-block: clamp(3.75rem, 2.6136rem + 4.8485vw, 6.25rem);
 }
 
 /* *****************************  Custom Styles  ******************************************* */
@@ -215,9 +237,37 @@ header {
   }
   
   /* Services */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .service img {
+    width: 64px;
+    margin: auto
+  }
+
+  .services h2,
+  .services h3,
+  .services h4,
+  .services p {
+    text-align: center;
+  }
+
   .service h4 {
-    margin-top: 1rem;
-    font-size: 1.1rem;
+    font-family: Playfair Display, serif;
+    margin-top: 2rem;
+    margin-bottom: 1em;
+    font-size: 24px;
+    font-weight: 500;
   }
   
   /* Our Work, About */

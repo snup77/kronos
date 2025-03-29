@@ -8,11 +8,11 @@
     </div>
   </section>
 
-  <section class="services">
+  <section class="services section-padding">
     <div class="container">
-      <h3>Services</h3>
+      <h3 class="section-label">Services</h3>
       <h2>What We Offer</h2>
-      <div class="grid">
+      <div class="services-grid">
         <div class="service">
           <img src="https://www.shethagency.com/wp-content/uploads/2023/12/design.svg" alt="Modern Website Design">
           <h4>Modern Website Design</h4>
@@ -47,9 +47,9 @@
     </div>
   </section>
 
-  <section class="our-work">
+  <section class="our-work section-padding">
     <div class="container">
-      <h3>Our Work</h3>
+      <h3 class="section-label">Our Work</h3>
       <h2>Cutting Edge Design</h2>
       <p>Examine the website of a solo attorney, Susan Curcio. Our team designed her logo and ensured the site looked great on mobile and tablet devices. We also created a blog so that she could target critical search terms and get ranked on search engines.</p>
       <a href="/our-work" class="btn" target="_blank">Explore Our Work</a>
@@ -57,9 +57,9 @@
     </div>
   </section>
 
-  <section class="about">
+  <section class="about section-padding">
     <div class="container">
-      <h3>About</h3>
+      <h3 class="section-label">About</h3>
       <h2>Legal Website Design Specialist</h2>
       <p>Sheth Agency was founded by Anup Sheth, who is committed to providing tailored online solutions to solo attorneys and small law firms. He has an extensive understanding of the legal profession gained from his role as a paralegal at two prominent New York law firms.</p>
       <p>He seamlessly integrates his legal expertise into web design and development by crafting visually striking and user-friendly websites that turn visitors into trusted clients.</p>
@@ -67,7 +67,7 @@
     </div>
   </section>
 
-  <section class="testimonial">
+  <section class="testimonial section-padding">
     <div class="container">
       <blockquote>
         <p>My experience with Sheth Agency was great! I needed a website that showcased my legal expertise but also conveyed empathy and trust, and Anup was able to design a visually-pleasing, user-friendly website that did just that. Anup is skilled, patient, kind, and easy to work with. I highly recommend his services.</p>
@@ -76,9 +76,9 @@
     </div>
   </section>
 
-  <section class="blog">
+  <section class="blog section-padding">
     <div class="container">
-      <h3>Blog</h3>
+      <h3 class="section-label">Blog</h3>
       <h2>Insights For Your Legal Practice</h2>
       <div class="grid">
         <article class="post">
