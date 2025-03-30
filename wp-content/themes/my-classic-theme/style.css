@@ -28,6 +28,7 @@ ul, ol {
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
   color: inherit;
 }
@@ -139,6 +140,22 @@ p {
   padding-block: clamp(3.75rem, 2.6136rem + 4.8485vw, 6.25rem);
 }
 
+.btn {
+    color: #FFFFFF;
+    border-width: 0px;
+    border-radius: 0px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+    text-transform: uppercase;
+    background-color: #c39d63;
+    padding: 12px
+}
+
+/* .btn:hover {
+  background: #005c88;
+} */
+
 /* *****************************  Custom Styles  ******************************************* */
 
 
@@ -202,30 +219,22 @@ header {
     color: #555;
     margin-bottom: 2rem;
   }
-  
-  .btn {
-    display: inline-block;
-    background: #0077aa;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    border-radius: 4px;
-  }
-  
-  .btn:hover {
-    background: #005c88;
-  }
+
   
   /* Sections */
-  section {
+  /* section {
     padding: 4rem 1rem;
-  }
+  } */
   
   h2, h3 {
     margin-bottom: 1rem;
+  } 
+
+  .section-bg-color {
+    background-color: rgba(0, 0, 0, 0.03);
   }
   
-  .grid {
+  /* .grid {
     display: grid;
     gap: 2rem;
   }
@@ -234,7 +243,7 @@ header {
     .grid {
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
-  }
+  } */
   
   /* Services */
   .services-grid {
@@ -271,17 +280,22 @@ header {
   }
   
   /* Our Work, About */
-  .our-work img,
-  .about img {
-    margin-top: 1rem;
-    border-radius: 8px;
+  .our-work-grid, .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 4rem; /* Optional spacing between the boxes */
+    /* padding: 1rem; */
+  }
+  
+  @media (max-width: 768px) {
+    .our-work-grid, .about-grid {
+      grid-template-columns: 1fr; /* Stack them on top of each other */
+    }
   }
   
   /* Testimonial */
   .testimonial blockquote {
-    background: #f0f0f0;
     padding: 2rem;
-    border-left: 4px solid #0077aa;
     font-style: italic;
   }
   
@@ -293,6 +307,11 @@ header {
   }
   
   /* Blog */
+
+  .blog h2, .blog h3 {
+    text-align: center;
+  }
+  
   .blog .post h4 {
     margin: 0.5rem 0;
   }
@@ -302,6 +321,20 @@ header {
     color: #777;
     margin-bottom: 0.5rem;
   }
+
+    /* Services */
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4rem;
+      margin-top: 2rem;
+    }
+    
+    @media (max-width: 768px) {
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+    }
   
   /* Footer */
   .site-footer {
