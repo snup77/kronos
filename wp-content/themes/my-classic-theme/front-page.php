@@ -1,10 +1,14 @@
 <?php get_header(); ?>
 <!-- Hero Section -->
-<section class="hero">
-    <div class="container">
-      <h1>Turn Visitors Into Trusted Clients</h1>
-      <p class="subtitle">Website Design & Legal Marketing for Solo Attorneys and Small Law Firms</p>
-      <a href="/services" class="btn">Explore our services</a>
+<section class="homepage-hero">
+    <div class="homepage-hero-bg" style="background-image: url('https://www.shethagency.com/wp-content/uploads/2024/06/anup-homepage-pic-3-scaled.jpg')">
+      <div class="container homepage-content-width">
+        <div class="homepage-hero-content">
+          <h1>Turn Visitors Into Trusted Clients</h1>
+          <p class="subtitle">Website Design & Legal Marketing for Solo Attorneys and Small Law Firms</p>
+          <a href="/services" class="btn">Explore our services</a>
+        </div>
+      </div>
     </div>
   </section>
 
